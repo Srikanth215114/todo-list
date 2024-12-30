@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todolist📝</title>
+    <link rel="stylesheet" href="todostyle.css">
+</head>
+<body>
+    <div class="cont">
+    <h1>TO DO LIST📝</h1>
+    <input type="text"placeholder="enter ur activities....."id="inputbox">
+    <button onclick="addtask()">Add</button>
+    <ul id="list"></ul>
+    <li class="checked">activity1</li>
+    <script>
+        const inputbox=document.getElementById("inputbox")
+        const list=document.getElementById("list")
+        function addtask(){
+            if(inputbox.value === ''){
+                alert("you must write smething!");
+            }
+            else{
+                let li=document.createElement("li");
+                li.innerHTML=inputbox.value;
+                list.appendChild(li);
+                let span=document.createElement("span");
+                span.innerHTML="\u00d7";
+                li.appendChild(span);
+            }
+            inputbox.value="";
+        }
+    </script>
+
+    
+    </div>
+</body>
+</html>

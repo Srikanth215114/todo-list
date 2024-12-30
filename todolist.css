@@ -1,0 +1,21 @@
+.cont{
+    width: 100%;
+    min-height: 100vh;
+    background: lightpink;
+    padding: 10px;
+}
+ul li{
+    
+    cursor: pointer;
+}
+ul li span{
+    
+    right: 0;
+    width: 40px;
+    font-size: 22px;
+    line-height: 40px;
+    text-align: center;
+}
+ul li span:hover{
+    background: #edeef0;
+}
